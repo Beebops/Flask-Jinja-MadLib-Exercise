@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mad-Libs</title>
+  </head>
+  <body>
+    <h1>Madlibs</h1>
+    <form action="/story">
+      <!-- iterate through prompts and generate a label/input tag for each  -->
+      {% for prompt in prompts %}
+      <label for="{{prompt}}">{{prompt}}</label>
+      <input
+        id="{{prompt}}"
+        type="text"
+        name="{{prompt}}"
+        placeholder="your answer"
+      />
+      {% endfor %}
+      <button>Generate story</button>
+    </form>
+  </body>
+</html>

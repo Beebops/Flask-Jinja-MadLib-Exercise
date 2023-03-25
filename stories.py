@@ -11,7 +11,7 @@ class Story:
         ...     "I love to {verb} a good {noun}.")
 
     To generate text from a story, pass in a dictionary-like thing
-    of {prompt: answer, promp:answer):
+    of {prompt: answer, prompt: answer):
 
         >>> ans = {"verb": "eat", "noun": "mango"}
         >>> s.generate(ans)
@@ -43,3 +43,7 @@ story = Story(
     """Once upon a time in a long-ago {place}, there lived a
        large {adjective} {noun}. It loved to {verb} {plural_noun}."""
 )
+
+# new_story_script = story.generate({'place': 'restaurant', 'adjective': 'silly', 'noun': 'sushi roll', 'verb': 'sing', 'plural_noun': 'opera'})
+
+# print(story.template)
