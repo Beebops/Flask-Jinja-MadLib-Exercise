@@ -5,9 +5,9 @@
 body {
   margin: 0;
   padding: 0;
-  color: red;
+  background-color: hsla(224, 27%, 14%, 1);
 }
 
 h1 {
-  color: blue;
+  color: hsla(224, 76%, 86%, 1);
 }
